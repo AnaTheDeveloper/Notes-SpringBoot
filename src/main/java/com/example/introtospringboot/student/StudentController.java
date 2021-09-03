@@ -12,7 +12,7 @@ import java.util.List;
 @RestController
 
 //This annotation maps HTTP requests to handler methods of MVC and REST controllers
-@RequestMapping(path = "api/v1/student")
+@RequestMapping(path = "/api/v1/student")
 
 public class StudentController {
 
@@ -21,7 +21,6 @@ public class StudentController {
 //We want java to know that StudentService is a spring bean
     private final StudentService studentService;
 
-//Dependency Injection annotation - @Autowired
     @Autowired
     public StudentController(StudentService studentService) {
         this.studentService = studentService;
