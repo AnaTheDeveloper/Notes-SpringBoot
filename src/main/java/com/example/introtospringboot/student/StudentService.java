@@ -16,8 +16,6 @@ public class StudentService {
     @Autowired
     private  StudentRepository studentRepository;
 
-
-
     public List<StudentModel> getStudents(){
         return studentRepository.findAll();
     }
@@ -60,7 +58,6 @@ public class StudentService {
             }
             studentModel.setEmail(email);
         }
-
 
     }
 }
